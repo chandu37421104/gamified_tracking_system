@@ -1,0 +1,42 @@
+.leaderboardList {
+  display: grid;
+  gap: 1rem;
+}
+
+.leaderboardItem {
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.2s ease-in-out;
+}
+
+.leaderboardItem:hover {
+  transform: translateX(4px);
+}
+
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+}
+
+.rank {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #6b7280;
+  min-width: 2rem;
+  text-align: center;
+}
+
+.points {
+  font-weight: 600;
+  color: var(--primary-color);
+}
