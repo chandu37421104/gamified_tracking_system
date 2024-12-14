@@ -1,0 +1,57 @@
+.rewardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.badgeCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.badgeCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb, #1e40af);
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.badgeCard:hover::before {
+  transform: scaleX(1);
+}
+
+.badgeIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.badgeTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.badgeRequirement {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.congratsSection {
+  background: linear-gradient(135deg, #4ade80 0%, #16a34a 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
